@@ -69,17 +69,36 @@ header {
     justify-content: space-around;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-areas: 
-    'img1 img2 img3 img4 img5'
-    
-    ;
+    'img1 img2 img3 img4 img5';
     
 }
 
 #img1 {
     grid-area: img1;
-    background-color: aqua;
     height: 100%;
-    background-image: url(/img/images.jpg);
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 25% 25%;
+    display: grid;
+    grid-template-areas:
+    'bc1'
+    'bc2'
+    'bc3'
+    ;
+}
+
+#blue-collar-1 {
+    grid-area: bc1;
+    background-color: aquamarine;
+}
+
+#blue-collar-2 {
+    grid-area: bc2;
+    background-color: blueviolet;
+}
+
+#blue-collar-3 {
+    grid-area: bc3;
+    background-color: burlywood;
 }
 
 #img2 {
