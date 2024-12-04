@@ -19,12 +19,32 @@
 
 nav {
     grid-area: nv;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     border-color: black;
     border-style: solid;
     border-width: 3px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #2ecc71;
+    
+}
+
+button {
+    background-color: #229652;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    width: 100%;
+    transition: background-color 0.3s;
+    
+}
+
+button:hover {
+    background-color: #29b362;
 }
 
 header {
@@ -41,15 +61,55 @@ header {
 
 #sec1 {
     grid-area: sc1;
-    border-color: black;
     border-style: solid;
+    border-color: black;
     border-width: 3px;
-    padding: 5px;
+    display: grid;
+    gap: 5px;
+    justify-content: space-around;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: 
+    'img1 img2 img3 img4 img5'
+    
+    ;
+    
 }
 
-.img1 {
-    height: 250px;
+#img1 {
+    grid-area: img1;
+    background-color: aqua;
+    height: 100%;
+    background-image: url(/img/images.jpg);
 }
+
+#img2 {
+    grid-area: img2;
+    background-color: bisque;
+    height: 100%;
+    background-image: url(/img/intro-1725041138.jpg);
+}
+
+#img3 {
+    grid-area: img3;
+    background-color: brown;
+    height: 100%;
+    background-image: url(/img/images.jpg);
+}
+
+#img4 {
+    grid-area: img4;
+    background-color: blue;
+    height: 100%;
+    background-image: url(/img/intro-1725041138.jpg);
+}
+
+#img5 {
+    grid-area: img5;
+    background-color: blueviolet;
+    height: 100%;
+    background-image: url(/img/images.jpg);
+}
+
 
 #sec2 {
     grid-area: sc2;
