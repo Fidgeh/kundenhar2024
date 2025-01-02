@@ -1,4 +1,3 @@
-
 :root {
     --huvudfarg: #2ecc71;
     --sekundfarg: #d1338e;
@@ -7,8 +6,8 @@
 
 #wrapper {
     display: grid;
-    grid-template-columns: 55% 45%;
-    grid-template-rows: 70px 70px 350px 80px 80px;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 70px 70px 200px 350px;
     height: 100vh;
     width: 100%;
     gap: 5px;
@@ -16,8 +15,7 @@
     'nv nv'
     'hd hd'
     'img as'
-    'sc1 as'
-    'sc2 as'
+    'sc as'
     ;
 }
 
@@ -40,7 +38,7 @@ nav {
 }
 
 
-.but1 {
+button {
     background-color: #229652;
     border: none;
     padding: 0.7rem;
@@ -50,7 +48,7 @@ nav {
     
 }
 
-.but1:hover {
+button:hover {
     background-color: var(--huvudfarg);
 }
 
@@ -66,39 +64,3 @@ header {
     font-size: 40px;
 }
 
-#img {
-    grid-area: img;
-    background-image: url("/img/images.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#sec1 {
-    grid-area: sc1;
-    display: flex;
-    align-items:center;
-}
-
-#sec1-p {
-    font-size: 300%;
-}
-
-#sec2 {
-    grid-area: sc2;
-}
-
-#but2 {
-    background-color: var(--huvudfarg);
-    width: 400px;
-    height: 70px;
-    font-size: 2rem;
-    transition: background-color 0.5s;
-}
-
-#but2:hover {
-    background-color: #229c56;
-}
-
-#asi {
-    grid-area: as;
-}
