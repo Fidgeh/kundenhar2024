@@ -3,19 +3,22 @@
     --sekundfarg: #d1338e;
 }
 
+a {
+    text-decoration: none;      
+    color: inherit;
+}
+
 
 #wrapper {
     display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 70px 70px 200px 350px;
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+    grid-template-rows: 70px 70px;
     height: 100vh;
     width: 100%;
     gap: 5px;
     grid-template-areas: 
-    'nv nv'
-    'hd hd'
-    'img as'
-    'sc as'
+    'nv nv nv'
+    'hd hd hd'
     ;
 }
 
@@ -39,6 +42,7 @@ nav {
 
 
 button {
+    flex: 1;
     background-color: #229652;
     border: none;
     padding: 0.7rem;
@@ -64,3 +68,7 @@ header {
     font-size: 40px;
 }
 
+
+#sec-wrap {
+
+}
