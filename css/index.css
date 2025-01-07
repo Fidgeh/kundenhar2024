@@ -27,7 +27,7 @@ a {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 70px 70px 350px 350px;
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     gap: 7px;
     grid-template-areas: 
@@ -110,7 +110,7 @@ header {
 
     #blue-collar-1-1 {
     grid-area: bc11;
-    background-image: url(/img/blue-collar-1.jpg);
+    background-image: url(/img/construction-new-bl-1.webp);
     background-size: cover;
     background-repeat: none;
     }
