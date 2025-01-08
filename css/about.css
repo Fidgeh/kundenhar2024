@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-columns: 30% 20% 50%;
     grid-template-rows: 70px 70px 350px 80px 80px;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     gap: 7px;
     grid-template-areas: 
@@ -75,7 +75,7 @@ header {
     grid-area: img;
     background-image: url("/img/construction-new-bl-1.webp");
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 
 #sec1 {
